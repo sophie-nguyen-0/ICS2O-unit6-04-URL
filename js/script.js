@@ -16,18 +16,17 @@ if (navigator.serviceWorker) {
 /**
  * this function
  */
-window.onload = function(){
+window.onload = function () {
   const params = new URLSearchParams(document.location.search)
-  
+
   //input
-  const r = params.get('r')  
+  const r = params.get("r")
 
   //process
-  const vol = (4/3)*Math.PI*(r^3)
+  const vol = (4 / 3) * Math.PI * (r ^ 3)
   const radius = "<p> radius = " + r + "</p>"
 
   //output
-  document.getElementById('radius').innerHTML= radius
-  document.getElementById('answer').innerHTML= 'the volume is: ' + vol
-  
+  document.getElementById("radius").innerHTML = radius
+  document.getElementById("answer").innerHTML = "the volume is: " + vol
 }
