@@ -16,6 +16,8 @@ if (navigator.serviceWorker) {
 /**
  * this function
  */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+window.onload = function(){
+  const params = new URLSearchParams(document.location.search)
+
+  
 }
