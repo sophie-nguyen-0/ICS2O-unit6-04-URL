@@ -23,7 +23,7 @@ window.onload = function () {
   const r = params.get("r")
 
   //process
-  const vol = (4 / 3) * Math.PI * (r ** 3)
+  const vol = (4 / 3) * Math.PI * r ** 3
   const radius = "<p> radius = " + r + "</p>"
 
   //output
