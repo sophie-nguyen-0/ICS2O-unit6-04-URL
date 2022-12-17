@@ -16,8 +16,6 @@ if (navigator.serviceWorker) {
 /**
  * this function
  */
-window.onload = function(){
+window.onload = function () {
   const params = new URLSearchParams(document.location.search)
-
-  
 }
