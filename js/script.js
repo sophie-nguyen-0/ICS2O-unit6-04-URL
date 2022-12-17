@@ -5,7 +5,7 @@
 "use strict"
 
 /**
- * Check servie worker.
+ * Check service worker.
  */
 if (navigator.serviceWorker) {
   navigator.serviceWorker.register("/ICS2O-unit6-04-URL/sw.js", {
@@ -14,7 +14,7 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * this function
+ * this function calculates the volume of a sphere
  */
 window.onload = function () {
   const params = new URLSearchParams(document.location.search)
@@ -23,7 +23,7 @@ window.onload = function () {
   const r = params.get("r")
 
   //process
-  const vol = (4 / 3) * Math.PI * (r ^ 3)
+  const vol = (4 / 3) * Math.PI * (r ** 3)
   const radius = "<p> radius = " + r + "</p>"
 
   //output
